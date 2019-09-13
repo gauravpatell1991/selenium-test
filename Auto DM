@@ -1,0 +1,4 @@
+//open new tab at same browser
+((JavascriptExecutor) driver).executeScript("window.open('	https://www.google.ae/	','_blank')");
+//open link from parent url.
+String selectLinkOpeninNewTab = Keys.chord(Keys.CONTROL,Keys.RETURN); 	driver.findElement(By.linkText("	urlLink	")).sendKeys(selectLinkOpeninNewTab);	OR	String selectLinkOpeninNewTab = Keys.chord(Keys.CONTROL,"t");	urlLink	)).sendKeys(selectLinkOpeninNewTab);
