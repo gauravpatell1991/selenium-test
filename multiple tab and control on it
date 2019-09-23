@@ -1,0 +1,13 @@
+@Test(priority=1)  public void method1	() throws InterruptedException  {
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\Tech\\workspace\\DMP\\exefiles\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		((JavascriptExecutor) driver).executeScript("window.open('	https://www.google.ae	','_blank')");
+		((JavascriptExecutor) driver).executeScript("window.open('	https://www.google.ae	','_blank')");
+		
+			ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
+		
+		driver.switchTo().window(tabs.get(1));driver.findElement(By.name("q")).click();driver.findElement(By.name("q")).sendKeys("BPUT");Thread.sleep(500); driver.findElement(By.name("btnK")).click();
+
+		driver.switchTo().window(tabs.get(2));driver.findElement(By.name("q")).click();driver.findElement(By.name("q")).sendKeys("facebook");Thread.sleep(500); driver.findElement(By.name("btnK")).click();
+System.out.println(" method 3");
+		
